@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   # Definiendo el controlador de la ruta /, que mostrará a todos los usaurios
   def index
     users = User.all
-    render json: user.as_json(json_options)
+    render json: users.as_json(json_options)
   end
 
   def create
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
     if user.save
       render json: user.as_json(json_options)
     else
-      render json: { status: :bad, error: user.errors.message }
+      render json: { status: :bad, errors: user.errors.messages }
     end
   end
 

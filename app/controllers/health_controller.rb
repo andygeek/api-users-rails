@@ -1,5 +1,7 @@
 class HealthController < ApplicationController
-    def health
-      render json: {api: 'OK'}, status: :ok
-    end
+  skip_before_action :authenticate!, only: :health
+
+  def health
+    render json: {api: 'OK'}, status: :ok
   end
+end

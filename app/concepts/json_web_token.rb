@@ -1,7 +1,7 @@
 class JsonWebToken
   # Este es el secreto de entrada para generar un token, es decir un valor randon para generar otro valor
   # el to_s sirve para convertir a string
-  SECRET_KEY = Rails.application.secret.key_base.to_s
+  SECRET_KEY = Rails.application.secrets.secret_key_base.to_s
 
   # El self funciona como un constructor
   def self.encode(payload, exp = 24.hours.from_now)
