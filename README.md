@@ -22,3 +22,15 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Los datos los tienes que enviar asi:
+
+```json
+{
+    "user": {
+        "email": "andy@gmail.com",
+        "password": "andy12313andyW"
+    }
+}
+```
