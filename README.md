@@ -1,31 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Proyecto con Ruby on Rails que utiliza JWT y Bcrypt para la autenticación de usuarios.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Los datos los tienes que enviar asi:
-
+El json que se debe utilizar para los POSTs es el siguiente. 
 ```json
 {
     "user": {
